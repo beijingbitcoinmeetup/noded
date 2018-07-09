@@ -26,7 +26,7 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-![Image](https://github.com/beijingbitcoinmeetup/EO/blob/master/samourai-wallet.png){:height="36px" width="36px"} ![Image](https://github.com/beijingbitcoinmeetup/EO/blob/master/bread-wallet.png){:height="36px" width="36px"}
+![Image](https://github.com/beijingbitcoinmeetup/EO/blob/master/samourai-wallet.png){ width=50% } ![Image](https://github.com/beijingbitcoinmeetup/EO/blob/master/bread-wallet.png){ width=50% }
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
