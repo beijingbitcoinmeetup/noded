@@ -46,6 +46,7 @@ Syntax highlighted code block
 
 ### Samourai Wallet
 <img src="https://github.com/beijingbitcoinmeetup/EO/blob/master/samourai-wallet.png" width="200">
+
 ### Bread Wallet
 <img src="https://github.com/beijingbitcoinmeetup/EO/blob/master/bread-wallet.png" width="200">
 
