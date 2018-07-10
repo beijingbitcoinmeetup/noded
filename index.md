@@ -32,7 +32,6 @@ Syntax highlighted code block
 
 ## iOS
 1. Download Bread wallet - link below
- <img src="https://github.com/beijingbitcoinmeetup/EO/blob/master/bread-wallet.png" width="200">
 
 2. Follow the steps to set-up a wallet - write down the seed provided and **do not lose**. Keep in a safe place. Anyone with this seed will be able to recreate your wallet and steal your funds. 
 
