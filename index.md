@@ -18,8 +18,7 @@ So here's what you need to do:
 Syntax highlighted code block
 
 # Android
-1. Download Samourai wallet
-<img src="https://github.com/beijingbitcoinmeetup/EO/blob/master/samourai-wallet.png" width="200">
+1. Download Samourai wallet - link below
 
 2. Follow the steps to set-up a wallet - write down the seed provided and **do not lose**. Keep in a safe place. Anyone with this seed will be able to recreate your wallet and steal your funds. 
 
@@ -32,7 +31,7 @@ Syntax highlighted code block
 6. Voila!
 
 ## iOS
-1. Download Bread wallet
+1. Download Bread wallet - link below
  <img src="https://github.com/beijingbitcoinmeetup/EO/blob/master/bread-wallet.png" width="200">
 
 2. Follow the steps to set-up a wallet - write down the seed provided and **do not lose**. Keep in a safe place. Anyone with this seed will be able to recreate your wallet and steal your funds. 
@@ -45,6 +44,11 @@ Syntax highlighted code block
 
 6. Voila!
 ```
+
+### Samourai Wallet
+<img src="https://github.com/beijingbitcoinmeetup/EO/blob/master/samourai-wallet.png" width="200">
+### Bread Wallet
+<img src="https://github.com/beijingbitcoinmeetup/EO/blob/master/bread-wallet.png" width="200">
 
 ### Need more help
 
