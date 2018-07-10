@@ -15,9 +15,7 @@ Note these steps are suitable for holding small amounts of Bitcoin - if you need
 So here's what you need to do:
 
 ```markdown
-Syntax highlighted code block
-
-# Android
+## Android
 1. Download Samourai wallet - link below
 
 2. Follow the steps to set-up a wallet - write down the seed provided and **do not lose**. Keep in a safe place. Anyone with this seed will be able to recreate your wallet and steal your funds. 
