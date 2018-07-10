@@ -1,39 +1,51 @@
 ## Entrepreneur's Orginisation Bitcoin Meetup
 
-You can use the [editor on GitHub](https://github.com/beijingbitcoinmeetup/EO/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Thanks for attending our meetup. Here are the instructions to take control of the Bitcoin secured with the Private Key that was handed out to you.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Remember** The private keys were created by someone other than you - this means whoever created them has a copy and can spend the funds at any time. This is why it is important you "sweep" the funds into a wallet for which you created the private keys yourself on a device you control.
 
-### Markdown
+Any bitcoin which is not swept by 31 July 2018 will be recycled (i.e. swept by me). Anyone who doesn't follow these steps before then will have spent their first money on their Bitcoin Education. Other expensive ways to get a bitcoin education include:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Leaving your coins on an exchange (vunerable to hacks, bankruptcy or simply stealing your funds)
+- ...
+- ...
+
+Note these steps are suitable for holding small amounts of Bitcoin - if you need to hold larger amounts you should not rely on these services, and instead use a _Hardware Wallet_(https://en.bitcoin.it/wiki/Hardware_wallet) and/or _Cold Storage_(https://en.bitcoin.it/wiki/Cold_storage). Please consult with an expert if you are looking to secure large value in Bitcoin.
+
+So here's what you need to do:
 
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# Android
+1. Download Samourai wallet
+<img src="https://github.com/beijingbitcoinmeetup/EO/blob/master/samourai-wallet.png" width="200">
 
-- Bulleted
-- List
+2. Follow the steps to set-up a wallet - write down the seed provided and **do not lose**. Keep in a safe place. Anyone with this seed will be able to recreate your wallet and steal your funds. 
 
-1. Numbered
-2. List
+3. Click the menu in the top-right corner and select Sweep Private Key
 
-**Bold** and _Italic_ and `Code` text
+4. Select scan and scan the QR code provided at the meetup.
 
-[Link](url) and ![Image](src)
+5. A message will appear allowing you to confirm the sweep - click yes
+
+6. Voila!
+
+## iOS
+1. Download Bread wallet
+ <img src="https://github.com/beijingbitcoinmeetup/EO/blob/master/bread-wallet.png" width="200">
+
+2. Follow the steps to set-up a wallet - write down the seed provided and **do not lose**. Keep in a safe place. Anyone with this seed will be able to recreate your wallet and steal your funds. 
+
+3. Click the menu in the top-right corner and select Sweep Private Key
+
+4. Select scan and scan the QR code provided at the meetup.
+
+5. A message will appear allowing you to confirm the sweep - click yes
+
+6. Voila!
 ```
 
-<img src="https://github.com/beijingbitcoinmeetup/EO/blob/master/samourai-wallet.png" width="200"> <img src="https://github.com/beijingbitcoinmeetup/EO/blob/master/bread-wallet.png" width="200">
+### Need more help
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/beijingbitcoinmeetup/EO/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Contact me via Signal
