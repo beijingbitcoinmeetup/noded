@@ -51,10 +51,10 @@ Click the menu in the top-right corner and select Sweep Private Key
 ```
 
 ### Samourai Wallet
-<img src="https://github.com/beijingbitcoinmeetup/EO/assets/samourai-wallet.png" width="200">
+<img src="https://beijingbitcoinmeetup.github.io/EO/assets/samourai-wallet.png" width="200">
 
 ### Bread Wallet
-<img src="https://github.com/beijingbitcoinmeetup/EO/assets/bread-wallet.png" width="200">
+<img src="https://beijingbitcoinmeetup.github.io/EO/assets/bread-wallet.png" width="200">
 
 ### Need more help
 
