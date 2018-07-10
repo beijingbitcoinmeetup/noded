@@ -52,4 +52,4 @@ Syntax highlighted code block
 
 ### Need more help
 
-Contact me via Signal
+Contact me via Signal, or join our new [Slack channel](https://join.slack.com/t/beijingbitcoinmeetup/shared_invite/enQtMzk1MzU4OTE4MzIxLWFlYTA4MjFkOWE4YWNiYTAxMmM1ZjQ0ZTQwNGQ3ZjcyNWQ0NjMwMzA5OWRjNDBjNDk3ZTUxNWY1NTcyMjlhYmI)
