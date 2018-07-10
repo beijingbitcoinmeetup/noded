@@ -26,7 +26,7 @@ Syntax highlighted code block
 
 4. Select scan and scan the QR code provided at the meetup.
 
-5. A message will appear allowing you to confirm the sweep - click yes
+5. A message will appear allowing you to confirm the sweep.
 
 6. Voila!
 
@@ -35,11 +35,17 @@ Syntax highlighted code block
 
 2. Follow the steps to set-up a wallet - write down the seed provided and **do not lose**. Keep in a safe place. Anyone with this seed will be able to recreate your wallet and steal your funds. 
 
-3. Click the menu in the top-right corner and select Sweep Private Key
+3. Click Manage Wallets and Hide Bitcoin Cash, Ethereum, and BRD wallets. These are known as Shitcoins.
+
+4. Click Currency Settings - Bitcoin - Redeem Priate Key
+
+5. Click to scan the QR code provided at the meetup.
+
+Click the menu in the top-right corner and select Sweep Private Key
 
 4. Select scan and scan the QR code provided at the meetup.
 
-5. A message will appear allowing you to confirm the sweep - click yes
+5. A message will appear allowing you to confirm the sweep.
 
 6. Voila!
 ```
