@@ -7,14 +7,15 @@ Thanks for attending our meetup. Here are the instructions to take control of th
 Any bitcoin which is not swept by 31 July 2018 will be recycled (i.e. swept by me). Anyone who doesn't follow these steps before then will have spent their first money on their Bitcoin Education. Other expensive ways to get a bitcoin education include:
 
 - Leaving your coins on an exchange (vunerable to hacks, bankruptcy or simply stealing your funds)
-- ...
-- ...
+- Day trading (one lucky trade does not make you a trading god)
+- Showing someone your private key
 
-Note these steps are suitable for holding small amounts of Bitcoin - if you need to hold larger amounts you should not rely on these services, and instead use a _Hardware Wallet_(https://en.bitcoin.it/wiki/Hardware_wallet) and/or _Cold Storage_(https://en.bitcoin.it/wiki/Cold_storage). Please consult with an expert if you are looking to secure large value in Bitcoin.
+<img src="https://beijingbitcoinmeetup.github.io/EO/assets/wallet-inspector.jpg" width="200">
+
+Note these steps are suitable for holding small amounts of Bitcoin - if you need to hold larger amounts you should not rely on these services, and instead use a [_Hardware Wallet_](https://en.bitcoin.it/wiki/Hardware_wallet) and/or [_Cold Storage_](https://en.bitcoin.it/wiki/Cold_storage). Please consult with an expert if you are looking to secure large value in Bitcoin.
 
 So here's what you need to do:
 
-```markdown
 ## Android
 1. Download Samourai wallet - link below
 
@@ -39,14 +40,9 @@ So here's what you need to do:
 
 5. Click to scan the QR code provided at the meetup.
 
-Click the menu in the top-right corner and select Sweep Private Key
+6. A message will appear allowing you to confirm the sweep.
 
-4. Select scan and scan the QR code provided at the meetup.
-
-5. A message will appear allowing you to confirm the sweep.
-
-6. Voila!
-```
+7. Voila!
 
 ### Samourai Wallet
 <img src="https://beijingbitcoinmeetup.github.io/EO/assets/samourai-wallet.png" width="200">
