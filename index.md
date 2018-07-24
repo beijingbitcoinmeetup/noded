@@ -1,4 +1,4 @@
-## Entrepreneur's Orginisation Bitcoin Meetup
+## Entrepreneurs' Orginisation Bitcoin Meetup
 
 Thanks for attending our meetup. Here are the instructions to take control of the Bitcoin secured with the Private Key that was handed out to you.
 
