@@ -4,7 +4,7 @@ Thanks for attending our meetup. Here are the instructions to take control of th
 
 **Remember** The private keys were created by someone other than you - this means whoever created them has a copy and can spend the funds at any time. This is why it is important you "sweep" the funds into a wallet for which you created the private keys yourself on a device you control.
 
-Any bitcoin which is not swept by 31 July 2018 will be recycled (i.e. swept by me). Anyone who doesn't follow these steps before then will have spent their first money on their Bitcoin Education. Other expensive ways to get a bitcoin education include:
+Any bitcoin which is not swept by Friday 3rd August 2018 will be recycled (i.e. swept by me). Anyone who doesn't follow these steps before then will have spent their first money on their Bitcoin Education (and beer for me). Other expensive ways to get a bitcoin education include:
 
 - Leaving your coins on an exchange (vunerable to hacks, bankruptcy or simply stealing your funds)
 - Day trading (one lucky trade does not make you a trading god)
