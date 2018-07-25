@@ -36,7 +36,7 @@ So here's what you need to do:
 
 3. Click Manage Wallets and Hide Bitcoin Cash, Ethereum, and BRD wallets. These are known as Shitcoins.
 
-4. Click Currency Settings - Bitcoin - Redeem Private Key
+4. Click Menu - Manage Wallets - Bitcoin Settings - Redeem Private Key
 
 5. Click to scan the QR code provided at the meetup.
 
