@@ -1,55 +1,109 @@
-## Entrepreneurs' Orginisation Bitcoin Meetup
+## Noded Bitcoin Meetup
 
-Thanks for attending our meetup. Here are the instructions to take control of the Bitcoin secured with the Private Key that was handed out to you.
+Here are the resources from the meetup. For any clarification please hit up the group on [Slack] (https://join.slack.com/t/beijingbitcoinmeetup/shared_invite/enQtNDE5MjUzNjkwNjQ0LTkxOTFjNmMyOTg2ZjI3ZTZlZGExYTFiN2M3ODcyNGVjNGY0YmJkNWRhZGM2OTU1M2FiNDI1OTlkYWE2Yjg2NjQ)
 
-**Remember** The private keys were created by someone other than you - this means whoever created them has a copy and can spend the funds at any time. This is why it is important you "sweep" the funds into a wallet for which you created the private keys yourself on a device you control.
+**Warning** This tutoial is for information purposes only. In order to be able to get a functioning system up within a reasonable timeframe I have ignored several factors to consider when setting up your own node such as:
 
-Any bitcoin which is not swept by Friday 3rd August 2018 will be recycled (i.e. swept by me). Anyone who doesn't follow these steps before then will have spent their first money on their Bitcoin Education (and beer for me). Other expensive ways to get a bitcoin education include:
+- Using a hosted provider is less ideal than running off your own hardware
+- Running as a root is not recommended
+- Firewall rules have not been considered
+- Using a Ubuntu package is less trusted than building yourself
 
-- Leaving your coins on an exchange (vunerable to hacks, bankruptcy or simply stealing your funds)
-- Day trading (one lucky trade does not make you a trading god)
-- Showing someone your private key
+Most importantly **I do not know what I'm doing** - following these steps should be considered REKLESS
 
-<img src="https://beijingbitcoinmeetup.github.io/EO/assets/wallet-inspector.jpg" width="200">
+But hey ho, let's go:
 
-Note these steps are suitable for holding small amounts of Bitcoin - if you need to hold larger amounts you should not rely on these services, and instead use a [_Hardware Wallet_](https://en.bitcoin.it/wiki/Hardware_wallet) and/or [_Cold Storage_](https://en.bitcoin.it/wiki/Cold_storage). Please consult with an expert if you are looking to secure large value in Bitcoin.
+## SSH
 
-So here's what you need to do:
+1. Open up a Terminal window and create a public/private key pairing for the purpose of accessing your remote server:`ssh-keygen -t rsa`
+2. Save the key in the default location `/Users/[YOURNAME]/.ssh/` using the filename beijing (i.e. `/Users/satoshinakamoto/.ssh/beijing`
+3. Enter and reenter a passphrase to secure your private key
 
-## Android
-1. Download Samourai wallet - link below
+## Digital Ocean
 
-2. Follow the steps to set-up a wallet - write down the seed provided and **do not lose**. Keep in a safe place. Anyone with this seed will be able to recreate your wallet and steal your funds. 
+4. Go to https://www.digitalocean.com (hopefully you have already signed up in advance)
+5. Click Create > Droplets
+6. In the options select Ubuntu, 4GB/2CPUs
+7. Under Add Blcok Storage select Add Volume and select 250GB
+8. Under Datacentre Region select San Francisco 2
+9. Under Add your SSH keys, click New SSH key
+11. Access the folder on your laptop as per Step2 (e.g. `/Users/satoshinakamoto/.ssh/beijing`), and open the beijing.pub file using a text editor (I like [Atom](https://atom.io)), copy the whole contents and paste into the box on digitalocean
+12. Under Choose a hostname input `beijing`
+13. Wait for the droplet to be created
+14. Once created, copy the IP address next to the Droplet name
 
-3. Click the menu in the top-right corner and select Sweep Private Key
+## Access your new server
 
-4. Select scan and scan the QR code provided at the meetup.
+15. `ssh root@[IP] -i /Users/[username]/.ssh/beijing` (see Step 2 for the filepath)
+16. Type `yes`
+17. Enter passphrase
+18. You are now in root@beijing :)
 
-5. A message will appear allowing you to confirm the sweep.
+## Time to Bitcoin
 
-6. Voila!
+19. sudo apt-add-repository ppa:bitcoin/bitcoin (enter to confirm)
+20. sudo apt-get update
+21. sudo apt-get install bitcoind
+22. mkdir ~/.bitcoin
+23. nano ~/.bitcoin/bitcoin.conf
+24. Copy and paste the `bicoin.conf` text into the terminal window
+25. Ctrl+X to exit Y to save
+26. You are ready to go! `bitcoind -daemon` and you will be on your way!
+27. `bitcoin-cli getblockcount` will show you how many blocks you have downloaded
+28. Before you have your first block you can check `bitcoin-cli getblockchaininfo` to show more detailed informations - so long as the number of `headers` is rising then you are on your way!
 
-## iOS
-1. Download Bread wallet - link below
+## Switcharoo
 
-2. Follow the steps to set-up a wallet - write down the seed provided and **do not lose**. Keep in a safe place. Anyone with this seed will be able to recreate your wallet and steal your funds. 
+You are now syncing your own bitcoin node. Congratulations! This will take over 24hrs...so I have followed the above steps for y'all in advance for you to use for the rest of today's activities.
 
-3. Click Manage Wallets and Hide Bitcoin Cash, Ethereum, and BRD wallets. These are known as Shitcoins.
+## Post-Sync
 
-4. Click Menu - Manage Wallets - Bitcoin Settings - Redeem Private Key
+29. Access your server by: `ssh root@[IP] -i /Users/satoshinakamoto/.ssh/beijing`?????????????????
 
-5. Click to scan the QR code provided at the meetup.
+## Lightning
 
-6. A message will appear allowing you to confirm the sweep.
+30. Install the prerequisites: `sudo apt-get install -y \ autoconf automake build-essential git libtool libgmp-dev \ libsqlite3-dev python python3 net-tools zlib1g-dev`
+31. Get the software: `git clone https://github.com/ElementsProject/lightning.git`
+32. `cd lightning`
+33. `./configure`
+34. `make`
+35. `lightningd/lightningd --network=bitcoin --bitcoin-datadir=/mnt/volume-sfo2-02 --bitcoin-rpcuser=foo --bitcoin-rpcpassword=bar log-level=debug` ??????????????
 
-7. Voila!
+## Getting Ready For Btcpayserver
 
-### Samourai Wallet
-<img src="https://beijingbitcoinmeetup.github.io/EO/assets/samourai-wallet.png" width="200">
+36. We need to install a bunch of Microsoft packages - `wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb`
+37. `sudo dpkg -i packages-microsoft-prod.deb`
+38. `sudo apt-get install apt-transport-https`
+39. `sudo apt-get update`
+40. `sudo apt-get install dotnet-sdk-2.1`
 
-### Bread Wallet
-<img src="https://beijingbitcoinmeetup.github.io/EO/assets/bread-wallet.png" width="200">
+## Now let's get NBXplorer - a blockchain explorer which Btcpayserver references
+
+41. `git clone https://github.com/dgarage/NBXplorer.git`
+42. `cd NBXplorer`
+43. `./build.sh`
+
+## Easy - now for btcpayserver
+
+44. `cd` to get back to the root directory
+45. `git clone https://github.com/btcpayserver/btcpayserver.git`
+46. `cd btcpayserver`
+47. `./build.sh`
+
+## OK - Everything installed now...almost there...
+
+48. `cd` to get back to the root directory
+49. `cd NBXplorer`
+50. `/run.sh --btcrpcuser=foo --btcrpcpassword=bar`
+51. `cd` to get back to the root directory
+52. `cd .btcpayserver/Main`
+53. `nano settings.config`
+54. Make sure some text is displayed - if not check you got the previosu steps right. Find the line beginning `# bind`. Delete the `#` and add your Droplet IP
+55. `cd`
+56. `cd btcpayserver`
+57. `./run.sh`
 
 ### Need more help
 
-Contact me via Signal, or join our new [Slack channel](https://join.slack.com/t/beijingbitcoinmeetup/shared_invite/enQtMzk1MzU4OTE4MzIxLWFlYTA4MjFkOWE4YWNiYTAxMmM1ZjQ0ZTQwNGQ3ZjcyNWQ0NjMwMzA5OWRjNDBjNDk3ZTUxNWY1NTcyMjlhYmI)
+Use [Slack] and hopefully we can share our experiences in getting this working! (https://join.slack.com/t/beijingbitcoinmeetup/shared_invite/enQtNDE5MjUzNjkwNjQ0LTkxOTFjNmMyOTg2ZjI3ZTZlZGExYTFiN2M3ODcyNGVjNGY0YmJkNWRhZGM2OTU1M2FiNDI1OTlkYWE2Yjg2NjQ)
+
