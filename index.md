@@ -7,7 +7,7 @@ Here are the resources from the meetup. For any clarification please hit up the 
 - Using a hosted provider is less ideal than running off your own hardware
 - Running as a root is not recommended
 - Firewall rules have not been considered
-- Using a Ubuntu package is less trusted than building yourself
+- Using a Ubuntu package is less trusted than building from source yourself
 
 Most importantly **I do not know what I'm doing** - following these steps should be considered REKLESS
 
@@ -105,10 +105,16 @@ You are now syncing your own bitcoin node. Congratulations! This will take over 
 
 ## I wonder if it worked...
 
-58. `cd` to get back to the root directory
-59. `cd NBXplorer`
-60. `/run.sh --btcrpcuser=foo --btcrpcpassword=bar`
-
+58. Open an exlporer and navigate to http://[YOURIP]:23000
+59. Pray
+60. All being well you'll be on the Btcpayserver homepage - this is your very own payment processing system!
+61. Click Register and enter your email address and password (note the first sign up will be given admin access, all subsequent sign-ups will not)
+62. Check your Terminal window running btcpayserver - hopefully you should se your registration creating an event
+63. Clcik Stores > Create a new store and name it 'test'
+64. In the store settings go to Derivation Scheme and click Modify
+65. Input your publickey (recommned zpub!)
+66. Make sure to check the addressses match one of your receiving addresses before confirming!
+67. 
 ### Need more help
 
 Use [Slack](https://join.slack.com/t/beijingbitcoinmeetup/shared_invite/enQtNDE5MjUzNjkwNjQ0LTkxOTFjNmMyOTg2ZjI3ZTZlZGExYTFiN2M3ODcyNGVjNGY0YmJkNWRhZGM2OTU1M2FiNDI1OTlkYWE2Yjg2NjQ) and hopefully we can share our experiences in getting this working! 
