@@ -67,7 +67,7 @@ You are now syncing your own bitcoin node. Congratulations! This will take over 
 32. `cd lightning`
 33. `./configure`
 34. `make`
-35. `lightningd/lightningd --network=bitcoin --bitcoin-datadir=/mnt/volume-sfo2-02 --bitcoin-rpcuser=foo --bitcoin-rpcpassword=bar log-level=debug` ??????????????
+35. `lightningd/lightningd --network=bitcoin --bitcoin-datadir=/mnt/volume-sfo2-02 --bitcoin-rpcuser=foo --bitcoin-rpcpassword=bar --log-level=debug` ??????????????
 
 ## Getting Ready For Btcpayserver
 
@@ -102,6 +102,12 @@ You are now syncing your own bitcoin node. Congratulations! This will take over 
 55. `cd`
 56. `cd btcpayserver`
 57. `./run.sh`
+
+## I wonder if it worked...
+
+58. `cd` to get back to the root directory
+59. `cd NBXplorer`
+60. `/run.sh --btcrpcuser=foo --btcrpcpassword=bar`
 
 ### Need more help
 
