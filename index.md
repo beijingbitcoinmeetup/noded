@@ -6,6 +6,7 @@ Here are the resources from the meetup. For any clarification please hit up the 
 
 - Using a hosted provider is less ideal than running off your own hardware
 - Running as a root is not recommended
+- No considerations re: RC connection security
 - Firewall rules have not been considered
 - Using a Ubuntu package is less trusted than building from source yourself
 
@@ -16,8 +17,9 @@ But hey ho, let's go:
 ## SSH
 
 1. Open up a Terminal window and create a public/private key pairing for the purpose of accessing your remote server:`ssh-keygen -t rsa`
-2. Save the key in the default location `/Users/[YOURNAME]/.ssh/` using the filename beijing (i.e. `/Users/satoshinakamoto/.ssh/beijing`
+2. Save the key in the default location `~/.ssh/` using the filename beijing (i.e. `/Users/satoshinakamoto/.ssh/beijing`
 3. Enter and reenter a passphrase to secure your private key
+4. Add the key to your keychain `ssh-add -K ~/.ssh/beijing`
 
 ## Digital Ocean
 
@@ -34,7 +36,7 @@ But hey ho, let's go:
 
 ## Access your new server
 
-15. `ssh root@[IP] -i /Users/[username]/.ssh/beijing` (see Step 2 for the filepath)
+15. `ssh root@[IP]`
 16. Type `yes`
 17. Enter passphrase
 18. You are now in root@beijing :)
@@ -58,7 +60,7 @@ You are now syncing your own bitcoin node. Congratulations! This will take over 
 
 ## Post-Sync
 
-29. Access your server by: `ssh root@[IP] -i /Users/satoshinakamoto/.ssh/beijing`?????????????????
+29. Access your server by: `ssh root@[IP]`
 
 ## Lightning
 
